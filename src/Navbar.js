@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
     },
     navb :{
 
-        color: 'blue'
-
+        color: 'blue',
+        
 
 
     },
@@ -45,7 +45,7 @@ export default function Navbar() {
                 <Toolbar>
 
                     <Typography variant="h6" className={classes.title}>
-                        Shoe-Store App
+                        Shoe-Store
           </Typography>
                     <Button color='inherit'>  <Link to='/' className={classes.navb}> Home </Link> </Button>
                     <Button color='inherit'>   <Link to='/about'className={classes.navb} > About </Link></Button>
