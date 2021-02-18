@@ -1,10 +1,12 @@
 import React from 'react';
+import Router1 from './Router';
+
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
-      <h1>Rameez khan</h1>
+    
+  <Router1 />      
     </>
   );
 }
