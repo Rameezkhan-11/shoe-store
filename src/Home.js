@@ -7,7 +7,7 @@ console.log(ShoesData.Shoe1.img)
     return(
 
         <>
-        <div style={{backgroundColor: 'black'}}>        <h1 style={{textAlign:'center', color: 'red', backgroundColor:'black'}}>Welcome to shoes Store</h1>
+        <div style={{backgroundColor: 'black'}}>        
 
 
         <img src={ShoesData.Shoe1.img} height='100%' width='100%'></img>
