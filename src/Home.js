@@ -11,7 +11,7 @@ console.log(ShoesData.Shoe1.img)
         {/* <div style={{backgroundColor: 'black'}}>         */}
 
 
-        <img src={ShoesData.Shoe1.img} height='auto' width='100%'></img>
+        <img src={ShoesData.Shoe1.img} height='100%' width='100%'></img>
         
         
         </>
