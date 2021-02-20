@@ -6,6 +6,7 @@ function Product() {
   return(
 
     <>
+    <div>
     {Object.keys(ShoesData).map(keyName =>{
       const data = ShoesData[keyName]
       return(
@@ -23,7 +24,7 @@ function Product() {
       </div>
         
 
-      
+    
 
       )
 
@@ -31,7 +32,7 @@ function Product() {
     })}
 
 
-
+</div>
     </>
 
 

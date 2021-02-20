@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        backgroundColor: 'black'
+        
                 
     },
     menuButton: {
@@ -19,14 +19,10 @@ const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
         textAlign: 'center',
-        color: 'white'
+        
         
     },
-    navb:{
-
-        backgroundColor: 'black'
-
-    }
+    
    
 }));
 
@@ -34,20 +30,20 @@ export default function Navbar() {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
-            <AppBar position="static" className={classes.navb}>
-                <Toolbar>
+        <>
+            <AppBar position="static" style={{color: 'black'}}>
+                <Toolbar className={classes.tool}>
 
                     <Typography variant="h6" className={classes.title}>
                         Shoe-Store
           </Typography>
-                    <Button>  <Link to='/' style={{color: 'white'}}> Home </Link> </Button>
-                    <Button>   <Link to='/product' style={{color: 'white'}}> Product </Link> </Button>
-                    <Button>   <Link to='/about' style={{color: 'white'}}> About </Link></Button>
+                    <Button> <Link to='/' style={{color: 'black'}}> Home </Link> </Button>
+                    <Button> <Link to='/product' style={{color: 'black'}}> Product </Link> </Button>
+                    <Button> <Link to='/about' style={{color: 'black'}}> About </Link></Button>
 
 
                 </Toolbar>
             </AppBar>
-        </div>
+        </>
     );
 }
