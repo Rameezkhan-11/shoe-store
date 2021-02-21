@@ -23,7 +23,10 @@ getRepo()
         
         {repoD.map((data,ind)=>{
             const url1 = data.clone_url;
+            const repoUrl = "https://github.com/Rameezkhan-11";
             
+            
+                
             return(
 
                     <div key={ind}>
@@ -32,7 +35,11 @@ getRepo()
                       
                   
             </img>
-            <p>Rameez khan</p>
+            <br />
+            <br />
+
+            <p>RepoOwner:<a href={repoUrl} target='_target'> Rameez khan </a></p>
+            <p>{data.name}</p>
                 <br />
     
             <a href={url1} target='_target' key={ind  + 2} >{url1}</a>
