@@ -31,11 +31,11 @@ export default function Navbar() {
 
     return (
         <>
-            <AppBar position="static" style={{color: 'black'}}>
+            <AppBar position="static" style={{backgroundColor: 'red', color: 'white'}}>
                 <Toolbar className={classes.tool}>
 
                     <Typography variant="h6" className={classes.title}>
-                        Shoe-Store
+                     <Link to='/' style={{color: 'black'}}>   Shoe-Store </Link>
           </Typography>
                     <Button> <Link to='/' style={{color: 'black'}}> Home </Link> </Button>
                     <Button> <Link to='/product' style={{color: 'black'}}> Product </Link> </Button>

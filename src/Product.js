@@ -1,6 +1,9 @@
+
 import React from 'react';
 import './Product.css';
 import ShoesData from './ShoesData.json';
+import  {Link } from 'react-router-dom';
+
 function Product() {
 
   return(
@@ -15,10 +18,10 @@ function Product() {
         <div className="card" >
         <img src={data.img} alt="Denim Jeans" style={{width:'100%', height: 'auto'}}></img>
 
-        <h1>Tailored Jeans</h1>
-        <p className="price">$19.99</p>
-        <p>Some text about the jeans..</p>
-        <p><button>Add to Cart</button></p>
+        <h1>{data.name}</h1>
+        <p className="price">{data.rate}</p>
+        <p>Best Shoes</p>
+      <Link to={`/product/${keyName}`}><button> Show Details </button></Link>
       </div>
     
       </div>

@@ -3,7 +3,6 @@
 
 
 
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -12,6 +11,13 @@
   font-family: arial;
   
   
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .price {
@@ -35,9 +41,3 @@
   opacity: 0.7;
 }
 
-
-@media only screen and (max-width: 480px) {
-  .img {
-    width: 100%;
-  }
-}

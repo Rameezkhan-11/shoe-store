@@ -13,6 +13,7 @@ function Home(){
 
 
         <img src={ShoesData.Shoe1.img} height='auto' width='100%'></img>
+        <img src={ShoesData.Shoe4.img} height='auto' width='100%'></img>
         
         
         </>
