@@ -9,7 +9,10 @@
   margin: auto;
   text-align: center;
   font-family: arial;
-  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   
 }
 

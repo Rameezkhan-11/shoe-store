@@ -11,6 +11,7 @@ function About(){
      const repo = await fetch ("https://api.github.com/users/Rameezkhan-11/repos")
      const data = await repo.json();   
      setRepoD(data);
+    //  console.log(data.owner.login);
      
      setImg1(data[0].owner.avatar_url)
  } 
@@ -23,31 +24,33 @@ getRepo()
         
         {repoD.map((data,ind)=>{
             const url1 = data.clone_url;
-            const repoUrl = "https://github.com/Rameezkhan-11";
+            const repoUrl =   "https://github.com/Rameezkhan-11";
+           
             
             
                 
             return(
 
-                    <div key={ind}>
-            <ul key={ind}>
-              <li key={ind}> <img key={ind + 1} src={im1} alt="Rameez" className="avatar">
-                      
-                  
-            </img>
-            <br />
-            <br />
-
-            <p>RepoOwner:<a href={repoUrl} target='_target'> Rameez khan </a></p>
-            <p>{data.name}</p>
-                <br />
-    
-            <a href={url1} target='_target' key={ind  + 2} >{url1}</a>
-            
-            </li>
-                
-                </ul>
+                    <div key={ind} className="card">
+                        <div>
+        <img src={im1} alt="Rameez" style={{width:'100%', height: 'auto'}}></img>
                 </div>
+            
+           
+                <div>
+            <p>RepoOwner:<a href={repoUrl} target='_target'> Rameez khan </a></p>
+            </div>
+                <br />
+                <div>
+                <p>
+                    URL:
+            <a href={url1} target='_target' key={ind  + 2} > {url1}</a>
+            </p>
+        </div>
+                
+                
+                </div>
+                
             )
 
 
@@ -55,7 +58,25 @@ getRepo()
         
 
 
-        })}
+        
+        
+        
+        })
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        }
+
+
+
+   
        
 </>
 
