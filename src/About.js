@@ -11,8 +11,8 @@ function About(){
      const repo = await fetch ("https://api.github.com/users/Rameezkhan-11/repos")
      const data = await repo.json();   
      setRepoD(data);
-    //  console.log(data.owner.login);
      
+      
      setImg1(data[0].owner.avatar_url)
  } 
 getRepo()
@@ -23,6 +23,7 @@ getRepo()
         <h1 style={{textAlign: 'center'}}>My Git Hub Repos</h1>
         
         {repoD.map((data,ind)=>{
+            const repoName = data.name;
             const url1 = data.clone_url;
             const repoUrl =   "https://github.com/Rameezkhan-11";
            
@@ -42,6 +43,7 @@ getRepo()
             </div>
                 <br />
                 <div>
+                    <p>RepoName: {repoName}</p>
                 <p>
                     URL:
             <a href={url1} target='_target' key={ind  + 2} > {url1}</a>
