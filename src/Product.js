@@ -19,8 +19,10 @@ function Product() {
         <img src={data.img} alt="Denim Jeans" style={{width:'100%', height: 'auto'}}></img>
 
         <h1>{data.name}</h1>
+        <br />
         <p className="price">{data.rate}</p>
         <p>Best Shoes</p>
+        <br />
       <Link to={`/product/${keyName}`}><button> Show Details </button></Link>
       </div>
     
