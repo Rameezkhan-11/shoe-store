@@ -19,8 +19,8 @@ getRepo()
  },[])
     return(
         <>
-        <h1 style={{textAlign: 'center' color:"blue"}}>About Us</h1>
-        <h1 style={{textAlign: 'center' color:"blue"}}>My Git Hub Repos</h1>
+        <h1 style={{textAlign: 'center', color:"blue"}}>About Us</h1>
+        <h1 style={{textAlign: 'center', color:"blue"}}>My Git Hub Repos</h1>
         
         {repoD.map((data,ind)=>{
             const repoName = data.name;
